@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springboot
+  flyway:
+    locations: classpath:/db/migration
+    schemas: diver
+    baselineOnMigrate: true
+    enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/diver
+    username: root
+    password: root
