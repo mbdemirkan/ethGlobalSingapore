@@ -8,3 +8,4 @@ ethGlobalSingapore
 -  Also change PROJECT_ID with your WalletConnect Project Id in the same file.
 
 * Backend folder hold Spring Boot App
+-  Replace datasource information in the Backend/src/main/resources/application.yml file
