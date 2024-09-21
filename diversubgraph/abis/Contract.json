@@ -1,0 +1,64 @@
+[
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "diver",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newDiveCount",
+        "type": "uint256"
+      }
+    ],
+    "name": "DiveLog",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "diver", "type": "address" },
+      { "internalType": "string", "name": "placeId", "type": "string" }
+    ],
+    "name": "logDive",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "diveMasterAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setDiveMaster",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "diver", "type": "address" }
+    ],
+    "name": "getDiveLog",
+    "outputs": [
+      {
+        "components": [
+          { "internalType": "uint256", "name": "diveCount", "type": "uint256" },
+          { "internalType": "string[]", "name": "places", "type": "string[]" }
+        ],
+        "internalType": "struct DiverLog.DiveLogType",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

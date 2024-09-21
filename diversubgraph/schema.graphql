@@ -1,0 +1,8 @@
+type DiveLog @entity(immutable: true) {
+  id: Bytes!
+  diver: Bytes! # address
+  newDiveCount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
